@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Standard Plan Registration</title>
+  <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Standard Plan - ₹2500/month</h2>
+
+  <form id="registrationForm">
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <input type="number" placeholder="Age" required>
+    <select required>
+      <option value="">Select Workout Time</option>
+      <option>Morning</option>
+      <option>Evening</option>
+    </select>
+    <textarea placeholder="Fitness Goals"></textarea>
+    <button type="submit">Submit Registration</button>
+  </form>
+
+  <a href="index.html">⬅ Back to Home</a>
+</div>
+
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <h3>✅ Registration Successful!</h3>
+    <p>Your details have been submitted.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<script src="plan.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StrikeFitness | Power Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">Strike<span>Fitness</span></div>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="menu" id="menu">☰</div>
+</header>
+
+<!-- BANNER -->
+<section class="banner" id="home">
+  <div class="banner-overlay">
+    <h1>Train Hard. Stay Fit.</h1>
+    <p>Your Fitness Journey Starts Here</p>
+    <button onclick="scrollToSection('pricing')">Get Started</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section reveal">
+
+  <div class="section-title">
+    <h5>ABOUT US</h5>
+    <h2>Why Choose Strike Fitness?</h2>
+    <p>We build strength, confidence and a powerful lifestyle.</p>
+  </div>
+
+  <div class="about-container">
+
+    <div class="about-left">
+      <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=800&q=80" alt="Gym">
+    </div>
+
+    <div class="about-right">
+      <p>
+        At Strike Fitness, we believe fitness is more than lifting weights —
+        it’s about building discipline, confidence, and a healthier future.
+        With expert trainers and modern equipment, we help you achieve real results.
+      </p>
+
+      <div class="about-features">
+        <div class="feature">
+          <h4>🏆 Certified Trainers</h4>
+          <p>Experienced and professional coaches.</p>
+        </div>
+
+        <div class="feature">
+          <h4>💪 Modern Equipment</h4>
+          <p>Latest machines and training tools.</p>
+        </div>
+
+        <div class="feature">
+          <h4>🔥 Personalized Plans</h4>
+          <p>Custom programs for every fitness level.</p>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div>
+          <h3>10+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div>
+          <h3>500+</h3>
+          <p>Happy Members</p>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- TRAINERS -->
+<section class="section trainers reveal" id="trainers">
+  <h2>Our Trainers</h2>
+
+  <div class="trainer-container">
+
+    <div class="trainer-card">
+      <a href="john.html">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Trainer">
+      </a>
+      <div class="trainer-info">
+        <h3>John Smith</h3>
+        <p>Strength Coach</p>
+      </div>
+    </div>
+
+    <div class="trainer-card">
+      <a href="emily.html">
+      <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883" alt="Trainer">
+      </a>
+      <div class="trainer-info">
+        <h3>Emily Brown</h3>
+        <p>Yoga Trainer</p>
+      </div>
+    </div>
+
+    <div class="trainer-card">
+      <a href="Sophia Carter.html">
+      <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=600&q=80" alt="Trainer">
+        </a>
+      <div class="trainer-info">
+        <h3>Sophia Carter</h3>
+        <p>Personal Trainer</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section pricing reveal">
+  <h2>Pricing Plans</h2>
+
+  <div class="cards">
+
+    <!-- BASIC -->
+    <div class="card">
+      <h3>Basic</h3>
+      <p class="price">₹1500 / month</p>
+      <ul>
+        <li>✔ Gym Access</li>
+        <li>✔ Cardio Equipment</li>
+        <li>✔ Locker Facility</li>
+        <li>✖ Personal Trainer</li>
+        <li>✖ Diet Plan</li>
+      </ul>
+      <button onclick="location.href='basic.html'">Choose Plan</button>
+    </div>
+
+    <!-- STANDARD -->
+    <div class="card popular">
+      <h3>Standard</h3>
+      <p class="price">₹2500 / month</p>
+      <ul>
+        <li>✔ Gym + Cardio</li>
+        <li>✔ Personal Trainer</li>
+        <li>✔ Locker Facility</li>
+        <li>✔ Basic Diet Plan</li>
+        <li>✖ Supplements</li>
+      </ul>
+      <button onclick="location.href='standard.html'">Choose Plan</button>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="card">
+      <h3>Premium</h3>
+      <p class="price">₹4000 / month</p>
+      <ul>
+        <li>✔ All Gym Access</li>
+        <li>✔ Personal Trainer</li>
+        <li>✔ Custom Diet Plan</li>
+        <li>✔ Supplements Guidance</li>
+        <li>✔ Steam & Shower</li>
+      </ul>
+      <button onclick="location.href='premium.html'">Choose Plan</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 StrikeFitness | Power Gym
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
